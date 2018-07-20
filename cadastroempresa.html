@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <Link rel="stylesheet" type="text/css" href="estilo.css" />
+    </head>
+    <body>
+        <h1>Business Finder Admin</h1>
+        <h2>Add Business</h2>
+        <form method="POST" action="cadastroempresa.php">
+        <label>Title:</label><br>
+        <input type="text" name="titulo" id="titulo"><br>
+        <br>
+        <label>Phone:</label><br>
+        <input type="text" class="form-control phone-mask" placeholder="Ex.: (00)0000-0000" name="telefone" id="telefone"><br>
+        <br>
+        <label>Address:</label><br>
+        <input type="text" name="endereco" id="endereco"><br>
+        <br>
+        <label>Zipcode:</label><br>
+        <input type="text" class="form-control cep-mask" placeholder="Ex.: 00000-000"name="cep" id="cep"><br>
+        <br>
+        <label>City:</label><br>
+        <input type="text" name="cidade" id="cidade"><br>
+        <br>
+        <label>State:</label><br>
+        <input type="text" name="estado" id="estado"><br>
+        <br>
+        <label>Descreption:</label><br>
+        <input type="text" name="descricao" id="descricao"><br>
+        <br>
+        <select  name="categoria" id="categoria">
+          <option>Auto</option>
+          <option>Beauty and Fitness</option>
+          <option>Entertainment</option>
+          <option>Food and Dining</option>
+          <option>Health</option>
+          <option>Sports</option>
+          <option>Travel</option>
+        </select> 
+        <br>
+        <p></p>
+        <input type="submit" value="Save" id="cadastrar" name="cadastrar">
+        </form>
+        <center><a href="index.php">Return</a></center>
+    </body>
+</html>
